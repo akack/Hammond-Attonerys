@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+import 'react-dropdown-now/style.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+import Header from './components/header'
+import {AuthProvider} from './components/state/authContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <Header/>
+      <App />
+    </AuthProvider>
   </React.StrictMode>
 );
 
