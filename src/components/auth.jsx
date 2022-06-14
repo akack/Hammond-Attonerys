@@ -7,7 +7,7 @@ function Auth() {
     const navigate = useNavigate();
 
     const login = () => {
-        setUser({name: 'Akha', surname: 'Magaqana', email: 'akham20@gmail.com', _id: '123', isLoggedIn: true})
+        setUser({name: 'Akha', surname: 'Magaqana', email: 'example@gmail.com', _id: '123', isLoggedIn: true})
         navigate("/dashboard");
     };
     return (
